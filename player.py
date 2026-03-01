@@ -23,7 +23,6 @@ class Player(pygame.sprite.Sprite):
         if (pygame.time.get_ticks() - self.jump_time <= self.acceleration_time):
             self.fall_multiplier = percent
 
-
     def jump(self, dt):
         keys = pygame.key.get_just_pressed()
         if keys[pygame.K_SPACE] or keys[pygame.K_UP]:
